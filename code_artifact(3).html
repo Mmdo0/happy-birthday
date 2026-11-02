@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>تولدت مبارک عشقم ✨🌙</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Vazirmatn for Persian & Cormorant Garamond for English -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600;1,700&family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --rose-gold: #f4b4c4;
+            --warm-gold: #fde08d;
+            --deep-night: #070617;
+            --midnight-violet: #16113a;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background: radial-gradient(circle at 50% 8%, #24195c 0%, #110c2e 48%, #060512 100%);
+            color: #fff;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .english-serif {
+            font-family: 'Cormorant Garamond', serif;
+            letter-spacing: 0.04em;
+        }
+
+        /* Glassmorphism Cards */
+        .glass-card {
+            background: rgba(24, 18, 56, 0.62);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 1px solid rgba(244, 180, 196, 0.24);
+            box-shadow: 0 16px 44px 0 rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.16);
+        }
+
+        .glass-card-gold {
+            background: linear-gradient(145deg, rgba(42, 30, 82, 0.72), rgba(20, 14, 44, 0.82));
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(253, 224, 141, 0.38);
+            box-shadow: 0 12px 35px rgba(253, 224, 141, 0.14);
+        }
+
+        /* Glowing Centered Moon Effect */
+        .moon-glow {
+            filter: drop-shadow(0 0 28px rgba(253, 224, 141, 0.7)) drop-shadow(0 0 65px rgba(244, 180, 196, 0.4));
+            animation: floatMoon 5s ease-in-out infinite;
+        }
+
+        @keyframes floatMoon {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(2deg); }
+        }
+
+        /* Candle Flame Animation & Extinguish Transition */
+        .flame-wrapper {
+            transform-origin: 120px 55px;
+            animation: flameFlicker 2s infinite ease-in-out;
+            transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.45s ease;
+        }
+
+        .flame-extinguished {
+            animation: none !important;
+            transform: translateY(6px) scale(0.01) !important;
+            opacity: 0 !important;
+        }
+
+        @keyframes flameFlicker {
+            0%, 100% { transform: scale(1) rotate(-1.5deg); opacity: 0.98; }
+            25% { transform: scale(1.06, 0.96) rotate(2deg); opacity: 1; }
+            50% { transform: scale(0.95, 1.06) rotate(-2deg); opacity: 0.92; }
+            75% { transform: scale(1.04, 0.98) rotate(1.5deg); opacity: 1; }
+        }
+
+        .flame-glow {
+            animation: pulseGlow 1.8s infinite alternate ease-in-out;
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        @keyframes pulseGlow {
+            0% { transform: scale(0.9); opacity: 0.45; }
+            100% { transform: scale(1.25); opacity: 0.85; }
+        }
+
+        /* Wispy Smoke Curls & Puffs */
+        .smoke-puff {
+            animation: riseSmoke 2.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        @keyframes riseSmoke {
+            0% { transform: translateY(0) translateX(0) scale(0.4); opacity: 0.85; }
+            45% { transform: translateY(-38px) translateX(10px) scale(1.35); opacity: 0.55; }
+            100% { transform: translateY(-88px) translateX(-12px) scale(2.4); opacity: 0; }
+        }
+
+        .smoke-curl-path {
+            stroke-dasharray: 120;
+            stroke-dashoffset: 120;
+            animation: drawSmokeCurl 2.8s ease-out forwards;
+        }
+
+        @keyframes drawSmokeCurl {
+            0% { stroke-dashoffset: 120; opacity: 0.85; transform: translateY(0); }
+            60% { stroke-dashoffset: 0; opacity: 0.55; transform: translateY(-10px); }
+            100% { stroke-dashoffset: -60; opacity: 0; transform: translateY(-24px); }
+        }
+
+        /* Custom Range Slider for Long-Distance Hug */
+        .hug-slider {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 14px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, rgba(244, 180, 196, 0.25), rgba(253, 224, 141, 0.4));
+            border: 1px solid rgba(244, 180, 196, 0.45);
+            outline: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .hug-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #fff 15%, #f472b6 65%, #db2777 100%);
+            box-shadow: 0 0 18px rgba(244, 114, 182, 0.9), 0 0 30px rgba(253, 224, 141, 0.6);
+            cursor: pointer;
+            border: 2px solid #fff;
+            transition: transform 0.15s ease;
+        }
+
+        .hug-slider::-webkit-slider-thumb:active {
+            transform: scale(1.18);
+        }
+
+        .hug-slider::-moz-range-thumb {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #fff 15%, #f472b6 65%, #db2777 100%);
+            box-shadow: 0 0 18px rgba(244, 114, 182, 0.9);
+            cursor: pointer;
+            border: 2px solid #fff;
+        }
+
+        /* Star Constellation Pulse */
+        .constellation-star {
+            cursor: pointer;
+            transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .constellation-star:hover {
+            transform: scale(1.22);
+        }
+        .star-unlocked {
+            filter: drop-shadow(0 0 12px #fde08d) drop-shadow(0 0 24px #f472b6);
+        }
+
+        /* Envelope Animation */
+        .envelope-flap {
+            transform-origin: top;
+            transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1), z-index 0.3s;
+        }
+        .envelope-open .envelope-flap {
+            transform: rotateX(180deg);
+        }
+
+        /* Shimmer Button */
+        .btn-shimmer {
+            background: linear-gradient(135deg, #ec4899 0%, #be185d 52%, #9d174d 100%);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px -5px rgba(236, 72, 153, 0.55), 0 0 20px rgba(253, 224, 141, 0.25);
+        }
+        .btn-shimmer::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -60%;
+            width: 45%;
+            height: 200%;
+            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+            transform: rotate(25deg);
+            animation: shimmerSweep 3.2s infinite;
+        }
+
+        @keyframes shimmerSweep {
+            0% { left: -60%; }
+            45%, 100% { left: 130%; }
+        }
+
+        /* Typewriter Cursor */
+        .typewriter-cursor::after {
+            content: '|';
+            color: #fde08d;
+            animation: blinkCursor 0.8s infinite;
+        }
+        @keyframes blinkCursor {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body class="selection:bg-pink-500 selection:text-white pb-14">
+
+    <!-- Background Starfield & Celebration Particle Canvas -->
+    <canvas id="skyCanvas" class="fixed inset-0 pointer-events-none z-0"></canvas>
+    <canvas id="fxCanvas" class="fixed inset-0 pointer-events-none z-40"></canvas>
+
+    <!-- Floating Music Toggle Button Only (No Luna Badge) -->
+    <header class="fixed top-4 right-4 z-30">
+        <button id="musicToggleBtn" onclick="toggleMusic()" class="flex items-center gap-2 px-3.5 py-2 rounded-full glass-card text-xs text-pink-100 hover:border-pink-300/60 active:scale-95 transition-all shadow-lg">
+            <span id="musicIcon" class="text-sm">🎶</span>
+            <span id="musicStatusText">آهنگ تولد</span>
+            <span id="musicWave" class="hidden items-end gap-0.5 h-3 mr-0.5">
+                <span class="w-0.5 h-3 bg-amber-300 animate-pulse"></span>
+                <span class="w-0.5 h-2 bg-pink-300 animate-pulse" style="animation-delay:0.2s"></span>
+                <span class="w-0.5 h-3.5 bg-amber-300 animate-pulse" style="animation-delay:0.4s"></span>
+            </span>
+        </button>
+    </header>
+
+    <!-- Custom Toast Notification -->
+    <div id="customToast" class="fixed top-16 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 -translate-y-4 transition-all duration-300 max-w-xs sm:max-w-sm w-[90%] text-center">
+        <div class="glass-card-gold px-4 py-2.5 rounded-2xl text-xs sm:text-sm text-amber-100 shadow-2xl border border-amber-300/50">
+            <span id="toastMessage">✨</span>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         MAIN VERTICAL CONTINUOUS CONTAINER
+         ========================================== -->
+    <main class="relative z-10 max-w-lg w-full mx-auto px-4 pt-12 space-y-8">
+
+        <!-- ==========================================
+             HERO SECTION: CENTERED GLOWING MOON
+             ========================================== -->
+        <section class="glass-card rounded-3xl p-6 sm:p-8 text-center relative overflow-hidden flex flex-col items-center justify-center">
+            <div class="absolute -top-16 left-1/2 -translate-x-1/2 w-64 h-64 rounded-full bg-amber-300/15 blur-3xl pointer-events-none"></div>
+
+            <!-- Centered Interactive Crescent Moon SVG -->
+            <div class="relative flex flex-col items-center justify-center my-2 moon-glow cursor-pointer" onclick="tapMoonSecret(event)">
+                <svg width="150" height="150" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-auto">
+                    <defs>
+                        <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#FFFBEB"/>
+                            <stop offset="55%" stop-color="#FDE08D"/>
+                            <stop offset="100%" stop-color="#F4B4C4"/>
+                        </linearGradient>
+                    </defs>
+                    <path d="M78.5 18.2C64.8 22.9 55 35.9 55 51.2C55 70.5 70.7 86.2 90 86.2C95.4 86.2 100.5 85 105 82.8C96.8 96.9 81.5 106.5 64 106.5C37.8 106.5 16.5 85.2 16.5 59C16.5 34.4 35.2 14.2 59.2 11.7C65.9 11 72.5 13.5 78.5 18.2Z" fill="url(#moonGrad)"/>
+                    <line x1="75" y1="20" x2="75" y2="46" stroke="#FDE08D" stroke-width="1" stroke-dasharray="2 2" opacity="0.75"/>
+                    <path d="M75 45L77.2 50.3L83 50.8L78.6 54.6L79.9 60.2L75 57.2L70.1 60.2L71.4 54.6L67 50.8L72.8 50.3L75 45Z" fill="#FFFBEB"/>
+                    <circle cx="32" cy="30" r="1.5" fill="#FFFBEB"/>
+                    <circle cx="96" cy="36" r="2" fill="#FDE08D"/>
+                </svg>
+            </div>
+
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-pink-100 to-amber-200 leading-relaxed mt-2 mb-3">
+                تولدت مبارک قشنگ‌ترینم ✨🤍
+            </h1>
+
+            <p class="text-sm sm:text-base text-pink-100/90 leading-8 font-light">
+                امشب ماه و تمام ستاره‌ها به افتخار به دنیا اومدن تو می‌درخشن بیب... 🌙🌷
+            </p>
+        </section>
+
+        <!-- ==========================================
+             STAGE 1 (FIRST): BIRTHDAY CAKE & MIC BLOW
+             ========================================== -->
+        <section id="section-cake" class="glass-card rounded-3xl p-6 text-center relative overflow-hidden">
+            <div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-pink-500/20 border border-pink-300/30 text-pink-200 text-xs mb-2.5">
+                <span>آرزو کن و شمع تولدت رو فوت کن 🕯️✨</span>
+            </div>
+
+            <h2 id="cakePromptTitle" class="text-base sm:text-lg font-bold text-white leading-relaxed mb-1">
+                چشماتو ببند، قشنگ‌ترین آرزوتو بکن و توی میکروفون فوت کن 🌙🤍
+            </h2>
+            <p id="cakeSubHint" class="text-xs text-pink-200/80 mb-2">
+                دکمه میکروفون زیر کیک رو بزن و واقعاً توی گوشیت فوت کن تا شمعت خاموش بشه!
+            </p>
+
+            <!-- Interactive Cake SVG Container -->
+            <div class="relative w-64 h-64 mx-auto my-1 flex items-center justify-center">
+                <!-- Warm Ambient Radial Glow Behind Candle -->
+                <div id="candleLightAura" class="w-44 h-44 rounded-full bg-amber-400/30 blur-2xl absolute top-2 flame-glow pointer-events-none"></div>
+
+                <!-- Floating Smoke Puffs Container (Populated on extinguish) -->
+                <div id="smokeContainer" class="absolute top-8 left-1/2 -translate-x-1/2 pointer-events-none z-20"></div>
+
+                <!-- Detailed Birthday Cake SVG (Without Luna Text) -->
+                <svg id="birthdayCakeSvg" onclick="blowOutCandle()" class="w-56 h-56 cursor-pointer select-none relative z-10 active:scale-95 transition-transform" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="plateGrad" x1="0" y1="0" x2="1" y2="0">
+                            <stop offset="0%" stop-color="#94a3b8"/>
+                            <stop offset="50%" stop-color="#f8fafc"/>
+                            <stop offset="100%" stop-color="#94a3b8"/>
+                        </linearGradient>
+                        <linearGradient id="tierBottomGrad" x1="0" y1="0" x2="1" y2="0">
+                            <stop offset="0%" stop-color="#831843"/>
+                            <stop offset="50%" stop-color="#be185d"/>
+                            <stop offset="100%" stop-color="#701a75"/>
+                        </linearGradient>
+                        <linearGradient id="tierTopGrad" x1="0" y1="0" x2="1" y2="0">
+                            <stop offset="0%" stop-color="#f472b6"/>
+                            <stop offset="50%" stop-color="#fbcfe8"/>
+                            <stop offset="100%" stop-color="#ec4899"/>
+                        </linearGradient>
+                        <linearGradient id="icingGrad" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#fff1f2"/>
+                            <stop offset="100%" stop-color="#fecdd3"/>
+                        </linearGradient>
+                        <linearGradient id="flameGrad" x1="0.5" y1="0" x2="0.5" y2="1">
+                            <stop offset="0%" stop-color="#ffffff"/>
+                            <stop offset="35%" stop-color="#fde047"/>
+                            <stop offset="75%" stop-color="#fb923c"/>
+                            <stop offset="100%" stop-color="#ef4444"/>
+                        </linearGradient>
+                    </defs>
+
+                    <!-- Cake Stand / Plate -->
+                    <ellipse cx="120" cy="212" rx="92" ry="14" fill="url(#plateGrad)" opacity="0.9"/>
+                    <ellipse cx="120" cy="209" rx="84" ry="11" fill="#e2e8f0"/>
+
+                    <!-- Bottom Cake Tier -->
+                    <path d="M48 150 C48 140, 192 140, 192 150 L192 200 C192 212, 48 212, 48 200 Z" fill="url(#tierBottomGrad)"/>
+                    <ellipse cx="120" cy="150" rx="72" ry="12" fill="#f472b6"/>
+
+                    <!-- Golden Pearls on Bottom Tier -->
+                    <circle cx="65" cy="198" r="3" fill="#fde08d"/>
+                    <circle cx="85" cy="202" r="3" fill="#fde08d"/>
+                    <circle cx="107" cy="204" r="3" fill="#fde08d"/>
+                    <circle cx="130" cy="204" r="3" fill="#fde08d"/>
+                    <circle cx="152" cy="202" r="3" fill="#fde08d"/>
+                    <circle cx="174" cy="198" r="3" fill="#fde08d"/>
+
+                    <!-- Decorative Golden Heart & Stars on Bottom Tier -->
+                    <path d="M120 183 C120 183 111 176 111 171 C111 168 113.5 166 116 166 C118 166 119.5 167.2 120 168.5 C120.5 167.2 122 166 124 166 C126.5 166 129 168 129 171 C129 176 120 183 120 183 Z" fill="#fde08d" opacity="0.9"/>
+                    <circle cx="92" cy="175" r="2" fill="#fde08d" opacity="0.75"/>
+                    <circle cx="148" cy="175" r="2" fill="#fde08d" opacity="0.75"/>
+
+                    <!-- Top Cake Tier -->
+                    <path d="M68 106 C68 98, 172 98, 172 106 L172 150 C172 160, 68 160, 68 150 Z" fill="url(#tierTopGrad)"/>
+                    <ellipse cx="120" cy="106" rx="52" ry="10" fill="#fff1f2"/>
+
+                    <!-- Dripping Cream Icing -->
+                    <path d="M68 106 Q76 122 84 110 Q93 128 103 111 Q114 126 125 112 Q137 129 148 111 Q160 124 172 106 Z" fill="url(#icingGrad)"/>
+
+                    <!-- Candle Body -->
+                    <rect x="114" y="62" width="12" height="44" rx="4" fill="#fff1f2" stroke="#f4b4c4" stroke-width="1.5"/>
+                    <path d="M114 74 L126 68 M114 86 L126 80 M114 98 L126 92" stroke="#ec4899" stroke-width="2.5"/>
+
+                    <!-- Candle Wick (Darkens when blown out) -->
+                    <line id="candleWick" x1="120" y1="53" x2="120" y2="62" stroke="#475569" stroke-width="2.2" stroke-linecap="round"/>
+                    <circle id="wickEmber" cx="120" cy="53" r="1.8" fill="#fb923c" opacity="0.9"/>
+
+                    <!-- SVG Wispy Smoke Curls (Hidden until extinguished) -->
+                    <g id="svgSmokeGroup" class="hidden">
+                        <path id="smokeCurl1" d="M120 52 C112 40, 128 28, 116 14 C110 6, 124 2, 118 -6" stroke="#e2e8f0" stroke-width="2.2" stroke-linecap="round" fill="none" opacity="0.75"/>
+                        <path id="smokeCurl2" d="M121 52 C129 38, 114 24, 125 10" stroke="#cbd5e1" stroke-width="1.6" stroke-linecap="round" fill="none" opacity="0.6"/>
+                    </g>
+
+                    <!-- Animated Layered Flame Group -->
+                    <g id="candleFlameGroup" class="flame-wrapper">
+                        <!-- Outer Warm Halo -->
+                        <ellipse cx="120" cy="39" rx="15" ry="21" fill="#fde047" opacity="0.36"/>
+                        <!-- Main Teardrop Flame -->
+                        <path d="M120 16 C120 16 132 32 132 43 C132 50 126.5 55 120 55 C113.5 55 108 50 108 43 C108 32 120 16 120 16 Z" fill="url(#flameGrad)"/>
+                        <!-- Inner Bright Core -->
+                        <ellipse cx="120" cy="46" rx="4.2" ry="7.5" fill="#ffffff" opacity="0.95"/>
+                    </g>
+                </svg>
+            </div>
+
+            <!-- Action Controls: Primary Microphone Blow Button + Live Meter -->
+            <div id="candleActionControls" class="flex flex-col items-center gap-3">
+                <button id="micBlowBtn" onclick="startMicBlowDetection()" class="btn-shimmer w-full sm:w-auto px-7 py-3.5 rounded-2xl text-white text-sm sm:text-base font-bold flex items-center justify-center gap-2.5 active:scale-95 transition-all">
+                    <span>🎙️ فوت کردن شمع با میکروفون</span>
+                    <span>🌬️🕯️</span>
+                </button>
+
+                <!-- Live Microphone Volume Meter Bar -->
+                <div id="micMeterBox" class="hidden w-64 bg-black/40 rounded-2xl p-3 border border-amber-300/45 shadow-inner">
+                    <div class="text-xs text-amber-200 mb-2 animate-pulse font-medium">
+                        الان توی میکروفون گوشیت فوت کن بیب... 🌬️✨
+                    </div>
+                    <div class="w-full h-3 bg-white/10 rounded-full overflow-hidden p-0.5">
+                        <div id="micLevelBar" class="h-full rounded-full bg-gradient-to-r from-pink-400 via-amber-300 to-white w-0 transition-all duration-75"></div>
+                    </div>
+                </div>
+
+                <button onclick="blowOutCandle()" class="text-[11px] text-pink-200/65 hover:text-amber-200 underline underline-offset-4 transition-colors">
+                    (یا اگه میکروفون در دسترس نیست، روی شعله شمع ضربه بزن ✨)
+                </button>
+            </div>
+
+            <!-- Post-Blowout Celebration Message -->
+            <div id="wishRevealBox" class="hidden mt-4 p-4 rounded-2xl glass-card-gold transform scale-95 opacity-0 transition-all duration-500">
+                <p class="text-sm sm:text-base font-bold text-amber-100 leading-8">
+                    «آرزوت قبول قشنگ‌ترینم... شمع خاموش شد و آرزوت به سمت ماه پرواز کرد! 🌙✨🤍»
+                </p>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             STAGE 2: FOUR BRIGHT STARS (NO TEXT UNDER STARS)
+             ========================================== -->
+        <section id="section-stars" class="glass-card rounded-3xl p-6 text-center relative overflow-hidden">
+            <div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-pink-500/20 border border-pink-300/30 text-pink-200 text-xs mb-2.5">
+                <span>ستاره‌های قلبم برای تو 🌌💫</span>
+            </div>
+
+            <h2 class="text-lg sm:text-xl font-bold text-white mb-1">
+                چهار ستاره‌ی روشنِ آسمونِ من 🌙
+            </h2>
+            <p class="text-xs text-pink-100/80 mb-4">
+                روی هر ۴ ستاره ضربه بزن تا به هم وصل بشن و رازشون باز بشه (<span id="starCountText" class="text-amber-300 font-bold">۰ از ۴</span>)
+            </p>
+
+            <!-- Interactive 4-Star Constellation SVG (ZERO TEXT UNDER STARS) -->
+            <div class="relative w-full h-48 rounded-2xl bg-gradient-to-b from-[#0b0724] via-[#16103c] to-[#1f164e] border border-amber-200/25 overflow-hidden mb-4">
+                <svg class="w-full h-full" viewBox="0 0 340 185" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Glowing Constellation Lines -->
+                    <line id="cline-1" x1="65" y1="120" x2="132" y2="55" stroke="#fde08d" stroke-width="1.8" stroke-dasharray="4 4" opacity="0.18" class="transition-all duration-500"/>
+                    <line id="cline-2" x1="132" y1="55" x2="208" y2="55" stroke="#fde08d" stroke-width="1.8" stroke-dasharray="4 4" opacity="0.18" class="transition-all duration-500"/>
+                    <line id="cline-3" x1="208" y1="55" x2="275" y2="120" stroke="#fde08d" stroke-width="1.8" stroke-dasharray="4 4" opacity="0.18" class="transition-all duration-500"/>
+                    <line id="cline-4" x1="275" y1="120" x2="170" y2="152" stroke="#f4b4c4" stroke-width="1.4" stroke-dasharray="3 3" opacity="0.12" class="transition-all duration-500"/>
+                    <line id="cline-5" x1="65" y1="120" x2="170" y2="152" stroke="#f4b4c4" stroke-width="1.4" stroke-dasharray="3 3" opacity="0.12" class="transition-all duration-500"/>
+
+                    <!-- Star 1 (No label underneath) -->
+                    <g class="constellation-star" onclick="unlockStar(0, event)">
+                        <circle id="starHalo-0" cx="65" cy="120" r="22" fill="#fde08d" opacity="0.15"/>
+                        <path id="starPath-0" d="M65 103L69.3 114.2L81 115L72 122.4L74.8 134L65 127.5L55.2 134L58 122.4L49 115L60.7 114.2L65 103Z" fill="#cbd5e1"/>
+                    </g>
+
+                    <!-- Star 2 (No label underneath) -->
+                    <g class="constellation-star" onclick="unlockStar(1, event)">
+                        <circle id="starHalo-1" cx="132" cy="55" r="22" fill="#fde08d" opacity="0.15"/>
+                        <path id="starPath-1" d="M132 38L136.3 49.2L148 50L139 57.4L141.8 69L132 62.5L122.2 69L125 57.4L116 50L127.7 49.2L132 38Z" fill="#cbd5e1"/>
+                    </g>
+
+                    <!-- Star 3 (No label underneath) -->
+                    <g class="constellation-star" onclick="unlockStar(2, event)">
+                        <circle id="starHalo-2" cx="208" cy="55" r="22" fill="#fde08d" opacity="0.15"/>
+                        <path id="starPath-2" d="M208 38L212.3 49.2L224 50L215 57.4L217.8 69L208 62.5L198.2 69L201 57.4L192 50L203.7 49.2L208 38Z" fill="#cbd5e1"/>
+                    </g>
+
+                    <!-- Star 4 (No label underneath) -->
+                    <g class="constellation-star" onclick="unlockStar(3, event)">
+                        <circle id="starHalo-3" cx="275" cy="120" r="22" fill="#fde08d" opacity="0.15"/>
+                        <path id="starPath-3" d="M275 103L279.3 114.2L291 115L282 122.4L284.8 134L275 127.5L265.2 134L268 122.4L259 115L270.7 114.2L275 103Z" fill="#cbd5e1"/>
+                    </g>
+                </svg>
+            </div>
+
+            <!-- Revealed Star Card -->
+            <div id="starMessageCard" class="min-h-[88px] p-4 rounded-2xl glass-card-gold flex flex-col items-center justify-center transition-all duration-300">
+                <span id="starCardTitle" class="text-xs font-bold text-amber-300 mb-1">✨ راز ستاره‌ها ✨</span>
+                <p id="starMessageText" class="text-sm sm:text-base font-medium text-amber-50 leading-7">
+                    روی ستاره‌های بالا ضربه بزن تا پیام هرکدوم برات روشن بشه 🌙🤍
+                </p>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             STAGE 3: CROSSING THE DISTANCE (SLIDER)
+             ========================================== -->
+        <section id="section-hug" class="glass-card rounded-3xl p-6 text-center relative overflow-hidden">
+            <div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-pink-500/20 border border-pink-300/30 text-pink-200 text-xs mb-2.5">
+                <span>عبور از فاصله‌ها 🫂🤍</span>
+            </div>
+
+            <h2 class="text-lg sm:text-xl font-bold text-white mb-1">
+                فاصله‌ها فقط عددن 🤍✨
+            </h2>
+            <p class="text-xs text-pink-200/85 mb-5">
+                وضعیت فاصله: <span id="kmCounter" class="font-bold text-amber-300">دلتنگیِ زیاد 🌌</span>
+            </p>
+
+            <!-- Interactive Visual Bridge -->
+            <div id="hugBridgeBox" class="relative h-32 bg-indigo-950/55 rounded-2xl border border-pink-300/20 mb-5 flex items-center justify-center overflow-hidden px-4 transition-colors duration-500">
+                <!-- Dotted Star Bridge -->
+                <div class="w-3/4 border-t-2 border-dashed border-amber-200/30 absolute top-1/2 -translate-y-1/2"></div>
+
+                <!-- Center Merged Burst Effect -->
+                <div id="hugMergedEffect" class="opacity-0 scale-50 transition-all duration-500 absolute z-20 flex flex-col items-center">
+                    <div class="text-4xl animate-bounce">🫂🤍✨</div>
+                    <span class="text-xs text-amber-200 font-semibold mt-1.5 bg-pink-950/85 px-3 py-1 rounded-full border border-amber-300/40">
+                        توی بغلمی بیب! 🌷
+                    </span>
+                </div>
+
+                <!-- Right Avatar ("من") -->
+                <div id="avatarMe" class="absolute right-5 transition-all duration-75 flex flex-col items-center z-10">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-br from-indigo-500 to-purple-700 border-2 border-amber-200/75 flex items-center justify-center shadow-lg shadow-indigo-500/40">
+                        <span class="text-xl">🤍</span>
+                    </div>
+                    <span class="text-xs font-bold text-pink-100 mt-1">من</span>
+                </div>
+
+                <!-- Left Avatar ("تو") -->
+                <div id="avatarHer" class="absolute left-5 transition-all duration-75 flex flex-col items-center z-10">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-br from-pink-500 to-rose-600 border-2 border-amber-200/75 flex items-center justify-center shadow-lg shadow-pink-500/40">
+                        <span class="text-xl">🌙</span>
+                    </div>
+                    <span class="text-xs font-bold text-amber-200 mt-1">تو</span>
+                </div>
+            </div>
+
+            <!-- Range Slider Control -->
+            <div class="px-2 mb-2">
+                <label for="hugRangeInput" class="block text-xs sm:text-sm text-amber-200 font-medium mb-3">
+                    اسلایدر رو بکش تا فاصله‌مون صفر بشه ✨
+                </label>
+                <input id="hugRangeInput" type="range" min="0" max="100" value="0" dir="ltr" class="hug-slider" oninput="handleHugSlide(this.value)">
+            </div>
+
+            <!-- Revealed Hug Quote -->
+            <div id="hugRevealMessage" class="hidden mt-5 p-4 rounded-2xl glass-card-gold transition-all duration-500">
+                <p class="text-sm sm:text-base font-semibold text-amber-100 leading-7">
+                    «فاصله‌ها فقط عددن؛ بغلِ محکم من از همین راه دور تقدیم به تو بیب! 🤍✨🌷»
+                </p>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             STAGE 4 (FINAL): SEALED LOVE LETTER FOR FATEME
+             ========================================== -->
+        <section id="section-letter" class="glass-card rounded-3xl p-6 text-center relative overflow-hidden">
+            <div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-pink-500/20 border border-pink-300/30 text-pink-200 text-xs mb-2.5">
+                <span>پاکتِ نامه‌ی مخصوص تو 💌🌷</span>
+            </div>
+
+            <h2 class="text-lg sm:text-xl font-bold text-white mb-1">
+                برای قشنگ‌ترین اتفاق زندگیم
+            </h2>
+            <p id="envelopeHint" class="text-xs text-pink-200/85 mb-5">
+                روی مهرِ روی پاکت ضربه بزن تا نامه‌ت باز بشه 🌙🤍
+            </p>
+
+            <!-- Interactive Sealed Envelope -->
+            <div id="envelopeContainer" onclick="openLoveLetter()" class="relative w-64 h-40 mx-auto cursor-pointer select-none transition-all duration-500 hover:scale-105">
+                <!-- Envelope Back -->
+                <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-rose-300 via-pink-300 to-rose-400 shadow-2xl border border-white/40"></div>
+
+                <!-- Inner Letter Preview with Fateme's Name -->
+                <div id="innerLetterPreview" class="absolute left-3 right-3 top-3 bottom-3 bg-amber-50/95 rounded-xl p-3 shadow-inner transition-transform duration-700 flex flex-col items-center justify-center">
+                    <span class="english-serif text-indigo-950 font-bold text-base sm:text-lg leading-tight">For My Dearest Fateme</span>
+                    <span class="english-serif text-rose-700 font-semibold text-xs sm:text-sm mt-1">Happy Birthday Fateme</span>
+                </div>
+
+                <!-- Envelope Folds -->
+                <svg class="absolute inset-0 w-full h-full rounded-2xl pointer-events-none" viewBox="0 0 256 160" preserveAspectRatio="none">
+                    <path d="M0 160 L128 84 L256 160 Z" fill="#f472b6" opacity="0.9"/>
+                    <path d="M0 0 L105 88 L0 160 Z" fill="#f9a8d4" opacity="0.85"/>
+                    <path d="M256 0 L151 88 L256 160 Z" fill="#f9a8d4" opacity="0.85"/>
+                </svg>
+
+                <!-- Envelope Top Flap -->
+                <svg class="envelope-flap absolute top-0 left-0 w-full h-24 pointer-events-none z-20" viewBox="0 0 256 100" preserveAspectRatio="none">
+                    <path d="M0 0 L128 92 L256 0 Z" fill="#ec4899" stroke="#fbcfe8" stroke-width="1"/>
+                </svg>
+
+                <!-- Moon & Heart Wax Seal -->
+                <div id="waxSeal" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 w-14 h-14 rounded-full bg-gradient-to-br from-amber-300 via-rose-500 to-pink-700 p-0.5 shadow-xl flex items-center justify-center border-2 border-amber-100 transition-all duration-500">
+                    <div class="w-full h-full rounded-full bg-rose-600 flex items-center justify-center">
+                        <span class="text-lg animate-pulse">🌙🤍</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Revealed Typewriter Letter Paper -->
+            <div id="letterPaper" class="hidden mt-5 text-right p-5 sm:p-6 rounded-2xl bg-gradient-to-b from-[#1e1646] to-[#120d2e] border border-amber-300/40 shadow-2xl relative">
+                <div class="flex justify-between items-center border-b border-pink-300/20 pb-3 mb-4">
+                    <span class="text-amber-300 font-bold text-sm sm:text-base">برای عشقم 🌙🤍</span>
+                    <span class="english-serif text-pink-200/90 text-sm sm:text-base font-semibold">Happy Birthday Fateme</span>
+                </div>
+
+                <div class="text-xs text-amber-200/80 english-serif text-left mb-2">
+                    For My Dearest Fateme ✨
+                </div>
+
+                <p id="typewriterText" class="text-sm sm:text-base text-pink-50 leading-8 whitespace-pre-line font-normal typewriter-cursor"></p>
+
+                <!-- Footer Action inside Letter -->
+                <div id="letterFooterAction" class="hidden mt-6 pt-4 border-t border-pink-300/15 flex items-center justify-center">
+                    <button onclick="sendKissShower()" class="btn-shimmer w-full sm:w-auto text-white text-xs sm:text-sm font-bold px-7 py-3.5 rounded-xl inline-flex items-center justify-center gap-2 active:scale-95 transition-transform">
+                        <span>فرستادن بوسه برای تو</span>
+                        <span>💋✨</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==========================================
+         JAVASCRIPT LOGIC, AUTO-PLAY MUSIC & MIC BLOW
+         ========================================== -->
+    <script>
+        /* ------------------------------------------
+           1. STARFIELD & AESTHETIC PARTICLE ENGINE
+        ------------------------------------------ */
+        const skyCanvas = document.getElementById('skyCanvas');
+        const skyCtx = skyCanvas.getContext('2d');
+        const fxCanvas = document.getElementById('fxCanvas');
+        const fxCtx = fxCanvas.getContext('2d');
+
+        let stars = [];
+        let particles = [];
+        let floatingEmojis = [];
+
+        function resizeCanvases() {
+            skyCanvas.width = window.innerWidth;
+            skyCanvas.height = window.innerHeight;
+            fxCanvas.width = window.innerWidth;
+            fxCanvas.height = window.innerHeight;
+            initStarfield();
+        }
+
+        function initStarfield() {
+            stars = [];
+            const count = Math.min(135, Math.floor((window.innerWidth * window.innerHeight) / 8500));
+            for (let i = 0; i < count; i++) {
+                stars.push({
+                    x: Math.random() * skyCanvas.width,
+                    y: Math.random() * skyCanvas.height,
+                    radius: Math.random() * 1.7 + 0.4,
+                    alpha: Math.random(),
+                    speed: Math.random() * 0.018 + 0.005,
+                    hue: Math.random() > 0.68 ? '#fde08d' : '#ffffff'
+                });
+            }
+        }
+
+        function triggerSparkleAt(x, y, count = 35) {
+            const colors = ['#fde08d', '#f4b4c4', '#fbcfe8', '#ffffff', '#f9a8d4'];
+            for (let i = 0; i < count; i++) {
+                const angle = Math.random() * Math.PI * 2;
+                const speed = Math.random() * 4.8 + 1.2;
+                particles.push({
+                    x: x,
+                    y: y,
+                    vx: Math.cos(angle) * speed,
+                    vy: Math.sin(angle) * speed - 1.4,
+                    size: Math.random() * 3.8 + 1.8,
+                    color: colors[Math.floor(Math.random() * colors.length)],
+                    alpha: 1,
+                    decay: Math.random() * 0.018 + 0.012
+                });
+            }
+        }
+
+        function triggerCelebrationConfetti() {
+            const colors = ['#fde08d', '#f4b4c4', '#ec4899', '#fff1f2', '#e9d5ff'];
+            for (let i = 0; i < 85; i++) {
+                particles.push({
+                    x: Math.random() * fxCanvas.width,
+                    y: -15 - Math.random() * 90,
+                    vx: (Math.random() - 0.5) * 3.2,
+                    vy: Math.random() * 3.2 + 1.8,
+                    size: Math.random() * 4.5 + 2.5,
+                    color: colors[Math.floor(Math.random() * colors.length)],
+                    alpha: 1,
+                    decay: 0.0045
+                });
+            }
+        }
+
+        function spawnEmojiShower(emojiList = ['🌙', '✨', '🤍', '🌷', '🦢']) {
+            for (let i = 0; i < 20; i++) {
+                floatingEmojis.push({
+                    x: Math.random() * fxCanvas.width,
+                    y: fxCanvas.height + 20 + Math.random() * 80,
+                    vy: -(Math.random() * 2.6 + 1.6),
+                    vx: (Math.random() - 0.5) * 1.3,
+                    size: Math.floor(Math.random() * 12 + 19),
+                    char: emojiList[Math.floor(Math.random() * emojiList.length)],
+                    alpha: 1
+                });
+            }
+        }
+
+        function animateCanvases() {
+            skyCtx.clearRect(0, 0, skyCanvas.width, skyCanvas.height);
+            for (let s of stars) {
+                s.alpha += s.speed;
+                const twinkle = (Math.sin(s.alpha) + 1) / 2 * 0.8 + 0.2;
+                skyCtx.beginPath();
+                skyCtx.arc(s.x, s.y, s.radius, 0, Math.PI * 2);
+                skyCtx.fillStyle = s.hue;
+                skyCtx.globalAlpha = twinkle;
+                skyCtx.fill();
+            }
+            skyCtx.globalAlpha = 1;
+
+            fxCtx.clearRect(0, 0, fxCanvas.width, fxCanvas.height);
+            for (let i = particles.length - 1; i >= 0; i--) {
+                const p = particles[i];
+                p.x += p.vx;
+                p.y += p.vy;
+                p.vy += 0.055;
+                p.alpha -= p.decay;
+                if (p.alpha <= 0) {
+                    particles.splice(i, 1);
+                    continue;
+                }
+                fxCtx.save();
+                fxCtx.globalAlpha = Math.max(0, p.alpha);
+                fxCtx.fillStyle = p.color;
+                fxCtx.beginPath();
+                fxCtx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                fxCtx.fill();
+                fxCtx.restore();
+            }
+
+            for (let i = floatingEmojis.length - 1; i >= 0; i--) {
+                const e = floatingEmojis[i];
+                e.x += e.vx;
+                e.y += e.vy;
+                if (e.y < -40) {
+                    floatingEmojis.splice(i, 1);
+                    continue;
+                }
+                fxCtx.save();
+                fxCtx.font = `${e.size}px sans-serif`;
+                fxCtx.fillText(e.char, e.x, e.y);
+                fxCtx.restore();
+            }
+
+            requestAnimationFrame(animateCanvases);
+        }
+
+        /* ------------------------------------------
+           2. AUTO-PLAY HAPPY BIRTHDAY MUSIC BOX
+        ------------------------------------------ */
+        let audioCtx = null;
+        let isMusicPlaying = false;
+        let userManuallyMuted = false;
+        let melodyTimer = null;
+        let noteIndex = 0;
+
+        const birthdayMelody = [
+            { f: 261.63, d: 420 }, { f: 261.63, d: 420 }, { f: 293.66, d: 780 }, { f: 261.63, d: 780 }, { f: 349.23, d: 780 }, { f: 329.63, d: 1350 },
+            { f: 261.63, d: 420 }, { f: 261.63, d: 420 }, { f: 293.66, d: 780 }, { f: 261.63, d: 780 }, { f: 392.00, d: 780 }, { f: 349.23, d: 1350 },
+            { f: 261.63, d: 420 }, { f: 261.63, d: 420 }, { f: 523.25, d: 780 }, { f: 440.00, d: 780 }, { f: 349.23, d: 780 }, { f: 329.63, d: 780 }, { f: 293.66, d: 1350 },
+            { f: 466.16, d: 420 }, { f: 466.16, d: 420 }, { f: 440.00, d: 780 }, { f: 349.23, d: 780 }, { f: 392.00, d: 780 }, { f: 349.23, d: 1500 }
+        ];
+
+        function ensureAudioContext() {
+            if (!audioCtx) {
+                const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+                audioCtx = new AudioContextClass();
+            }
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+        }
+
+        function playMusicBoxNote(freq, durationMs = 700, volume = 0.08) {
+            if (!audioCtx || audioCtx.state !== 'running') return;
+            const now = audioCtx.currentTime;
+            const osc = audioCtx.createOscillator();
+            const overtone = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(freq, now);
+
+            overtone.type = 'triangle';
+            overtone.frequency.setValueAtTime(freq * 2, now);
+
+            gain.gain.setValueAtTime(0.0001, now);
+            gain.gain.linearRampToValueAtTime(volume, now + 0.03);
+            gain.gain.exponentialRampToValueAtTime(0.0001, now + (durationMs / 1000) * 1.4);
+
+            osc.connect(gain);
+            overtone.connect(gain);
+            gain.connect(audioCtx.destination);
+
+            osc.start(now);
+            overtone.start(now);
+            osc.stop(now + (durationMs / 1000) * 1.5);
+            overtone.stop(now + (durationMs / 1000) * 1.5);
+        }
+
+        function scheduleNextMelodyNote() {
+            if (!isMusicPlaying) return;
+            const current = birthdayMelody[noteIndex];
+            playMusicBoxNote(current.f, current.d, 0.075);
+            noteIndex = (noteIndex + 1) % birthdayMelody.length;
+            melodyTimer = setTimeout(scheduleNextMelodyNote, current.d);
+        }
+
+        function attemptAutoPlayMusic() {
+            if (userManuallyMuted) return;
+            try {
+                ensureAudioContext();
+                if (audioCtx && audioCtx.state === 'running') {
+                    if (!isMusicPlaying) {
+                        isMusicPlaying = true;
+                        updateMusicUI();
+                        scheduleNextMelodyNote();
+                    }
+                } else if (audioCtx) {
+                    audioCtx.resume().then(() => {
+                        if (!isMusicPlaying && !userManuallyMuted && audioCtx.state === 'running') {
+                            isMusicPlaying = true;
+                            updateMusicUI();
+                            scheduleNextMelodyNote();
+                        }
+                    }).catch(() => {});
+                }
+            } catch (e) {}
+        }
+
+        function toggleMusic() {
+            ensureAudioContext();
+            if (isMusicPlaying) {
+                isMusicPlaying = false;
+                userManuallyMuted = true;
+                clearTimeout(melodyTimer);
+            } else {
+                isMusicPlaying = true;
+                userManuallyMuted = false;
+                clearTimeout(melodyTimer);
+                scheduleNextMelodyNote();
+            }
+            updateMusicUI();
+        }
+
+        function updateMusicUI() {
+            const wave = document.getElementById('musicWave');
+            const icon = document.getElementById('musicIcon');
+            if (isMusicPlaying) {
+                wave.classList.remove('hidden');
+                wave.classList.add('flex');
+                icon.textContent = '🎶';
+            } else {
+                wave.classList.add('hidden');
+                wave.classList.remove('flex');
+                icon.textContent = '🔇';
+            }
+        }
+
+        function playChimeEffect(freqs = [523.25, 659.25, 783.99, 1046.5]) {
+            ensureAudioContext();
+            freqs.forEach((f, idx) => {
+                setTimeout(() => playMusicBoxNote(f, 650, 0.09), idx * 95);
+            });
+        }
+
+        // Unlock & auto-play Happy Birthday music on the very first touch/click/scroll anywhere
+        ['pointerdown', 'touchstart', 'click', 'keydown'].forEach(evtName => {
+            document.addEventListener(evtName, function onFirstGesture(e) {
+                if (e.target && e.target.closest && e.target.closest('#musicToggleBtn')) return;
+                attemptAutoPlayMusic();
+            }, { passive: true });
+        });
+
+        /* ------------------------------------------
+           3. CUSTOM TOAST HELPER & MOON TAP
+        ------------------------------------------ */
+        let toastTimeout = null;
+        function showToast(msg) {
+            const toast = document.getElementById('customToast');
+            const msgSpan = document.getElementById('toastMessage');
+            msgSpan.textContent = msg;
+            toast.classList.remove('opacity-0', '-translate-y-4');
+            toast.classList.add('opacity-100', 'translate-y-0');
+            clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                toast.classList.remove('opacity-100', 'translate-y-0');
+                toast.classList.add('opacity-0', '-translate-y-4');
+            }, 3400);
+        }
+
+        const moonWhispers = [
+            'تولدت مبارک قشنگ‌ترین ماهِ آسمونِ من 🌙🤍',
+            'هر جا به ماه نگاه کنی، منم همون لحظه به یادتم بیب 🌷🤍',
+            'مرسی که دنیای منو روشن کردی قشنگ‌ترینم ✨🦢'
+        ];
+        let moonWhisperIdx = 0;
+
+        function tapMoonSecret(e) {
+            attemptAutoPlayMusic();
+            triggerSparkleAt(e.clientX || window.innerWidth / 2, e.clientY || 180, 30);
+            playChimeEffect([587.33, 880, 1174.66]);
+            showToast(moonWhispers[moonWhisperIdx]);
+            moonWhisperIdx = (moonWhisperIdx + 1) % moonWhispers.length;
+        }
+
+        /* ------------------------------------------
+           4. STAGE 1: CAKE & MICROPHONE BLOW DETECTION
+        ------------------------------------------ */
+        let isCandleBlown = false;
+        let micStream = null;
+        let micAnimFrame = null;
+
+        async function startMicBlowDetection() {
+            attemptAutoPlayMusic();
+            if (isCandleBlown) return;
+            try {
+                ensureAudioContext();
+                micStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                const source = audioCtx.createMediaStreamSource(micStream);
+                const analyser = audioCtx.createAnalyser();
+                analyser.fftSize = 256;
+                source.connect(analyser);
+
+                const timeData = new Uint8Array(analyser.fftSize);
+                const freqData = new Uint8Array(analyser.frequencyBinCount);
+                const meterBox = document.getElementById('micMeterBox');
+                const levelBar = document.getElementById('micLevelBar');
+                const micBtn = document.getElementById('micBlowBtn');
+
+                meterBox.classList.remove('hidden');
+                micBtn.innerHTML = '<span>🎙️ میکروفون فعاله! الان فوت کن...</span><span>🌬️✨</span>';
+
+                function checkBlowVolume() {
+                    if (isCandleBlown) return;
+                    analyser.getByteFrequencyData(freqData);
+                    analyser.getByteTimeDomainData(timeData);
+
+                    // Low-frequency wind energy (blowing into phone mic produces strong low-frequency rumble)
+                    let lowFreqSum = 0;
+                    for (let i = 0; i < 28; i++) {
+                        lowFreqSum += freqData[i];
+                    }
+                    const lowFreqAvg = lowFreqSum / 28;
+
+                    // RMS amplitude from time domain
+                    let rmsSum = 0;
+                    for (let i = 0; i < timeData.length; i++) {
+                        const norm = (timeData[i] - 128) / 128;
+                        rmsSum += norm * norm;
+                    }
+                    const rms = Math.sqrt(rmsSum / timeData.length) * 100;
+
+                    const combinedLevel = Math.max(lowFreqAvg, rms * 2.4);
+                    const percent = Math.min(100, Math.round((combinedLevel / 78) * 100));
+                    levelBar.style.width = `${percent}%`;
+
+                    if (combinedLevel > 75) {
+                        blowOutCandle();
+                        return;
+                    }
+                    micAnimFrame = requestAnimationFrame(checkBlowVolume);
+                }
+                checkBlowVolume();
+            } catch (err) {
+                showToast('برای فوت کردن با میکروفون اجازه دسترسی بده، یا مستقیم روی شعله شمع ضربه بزن بیب 🕯️✨');
+            }
+        }
+
+        function stopMicStream() {
+            if (micAnimFrame) cancelAnimationFrame(micAnimFrame);
+            if (micStream) {
+                micStream.getTracks().forEach(track => track.stop());
+                micStream = null;
+            }
+            const meterBox = document.getElementById('micMeterBox');
+            if (meterBox) meterBox.classList.add('hidden');
+        }
+
+        function blowOutCandle() {
+            attemptAutoPlayMusic();
+            if (isCandleBlown) return;
+            isCandleBlown = true;
+            stopMicStream();
+
+            // 1. Extinguish flame & darken wick
+            const flame = document.getElementById('candleFlameGroup');
+            const aura = document.getElementById('candleLightAura');
+            const wick = document.getElementById('candleWick');
+            const ember = document.getElementById('wickEmber');
+
+            flame.classList.add('flame-extinguished');
+            aura.style.opacity = '0';
+            wick.setAttribute('stroke', '#1e293b');
+            ember.setAttribute('opacity', '0');
+
+            // 2. Show wispy SVG smoke curls & rising smoke puffs
+            const svgSmoke = document.getElementById('svgSmokeGroup');
+            svgSmoke.classList.remove('hidden');
+            document.getElementById('smokeCurl1').classList.add('smoke-curl-path');
+            document.getElementById('smokeCurl2').classList.add('smoke-curl-path');
+
+            const smokeBox = document.getElementById('smokeContainer');
+            smokeBox.innerHTML = '';
+            for (let i = 0; i < 6; i++) {
+                const puff = document.createElement('div');
+                puff.className = 'w-4 h-4 rounded-full bg-slate-200/65 blur-sm absolute smoke-puff';
+                puff.style.left = `${(i - 2.5) * 5}px`;
+                puff.style.animationDelay = `${i * 0.16}s`;
+                smokeBox.appendChild(puff);
+            }
+
+            // 3. Sparkles, confetti & celebratory chord
+            const cakeRect = document.getElementById('birthdayCakeSvg').getBoundingClientRect();
+            triggerSparkleAt(cakeRect.left + cakeRect.width / 2, cakeRect.top + 50, 48);
+            triggerCelebrationConfetti();
+            spawnEmojiShower(['🌙', '✨', '🤍', '🌷', '🦢']);
+            playChimeEffect([523.25, 659.25, 783.99, 1046.5, 1318.5]);
+
+            // 4. Reveal wish message & automatically smooth-scroll to the next section
+            document.getElementById('candleActionControls').classList.add('hidden');
+            document.getElementById('cakeSubHint').classList.add('hidden');
+            document.getElementById('cakePromptTitle').innerHTML = 'شمع خاموش شد و آرزوت به سمت ماه پرواز کرد... تولدت مبارک عشقم! 🌙✨🤍';
+
+            const wishBox = document.getElementById('wishRevealBox');
+            wishBox.classList.remove('hidden');
+            requestAnimationFrame(() => {
+                wishBox.classList.remove('scale-95', 'opacity-0');
+            });
+
+            // Smooth scroll to the next stage below after she sees the smoke and celebration
+            setTimeout(() => {
+                const nextSection = document.getElementById('section-stars');
+                if (nextSection) {
+                    nextSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            }, 2300);
+        }
+
+        /* ------------------------------------------
+           5. STAGE 2: 4 BRIGHT STARS CONSTELLATION
+        ------------------------------------------ */
+        const starData = [
+            {
+                title: "صدای آرامش‌بخش تو 🎶🤍",
+                text: "حتی از پشت گوشی، شنیدن صدات یا دیدن یه پیامت تمام خستگی‌های دنیام رو از بین می‌بره."
+            },
+            {
+                title: "نزدیک‌ترین به قلبم 🌙🫂",
+                text: "شاید بینمون فاصله باشه، اما تو هر ثانیه نزدیک‌ترین آدم به قلب و فکر منی."
+            },
+            {
+                title: "لبخند قشنگت 🌷✨",
+                text: "قشنگ‌ترین اتفاق زندگیم روزی بود که تو وارد دنیام شدی و همه‌چیز رو روشن‌تر کردی."
+            },
+            {
+                title: "قشنگ‌ترین دختر دنیا 👑🦢",
+                text: "تولدت مبارک عزیزترینم؛ امیدوارم امسال به تک‌تک آرزوهات برسی."
+            }
+        ];
+        const unlockedStars = new Set();
+
+        function unlockStar(index, evt) {
+            attemptAutoPlayMusic();
+            unlockedStars.add(index);
+
+            if (evt && evt.clientX) {
+                triggerSparkleAt(evt.clientX, evt.clientY, 22);
+            }
+
+            const starPath = document.getElementById(`starPath-${index}`);
+            const starHalo = document.getElementById(`starHalo-${index}`);
+            starPath.setAttribute('fill', '#fde08d');
+            starPath.classList.add('star-unlocked');
+            starHalo.setAttribute('opacity', '0.48');
+
+            if (unlockedStars.has(0) && unlockedStars.has(1)) {
+                document.getElementById('cline-1').setAttribute('opacity', '0.9');
+            }
+            if (unlockedStars.has(1) && unlockedStars.has(2)) {
+                document.getElementById('cline-2').setAttribute('opacity', '0.9');
+            }
+            if (unlockedStars.has(2) && unlockedStars.has(3)) {
+                document.getElementById('cline-3').setAttribute('opacity', '0.9');
+            }
+
+            const titleEl = document.getElementById('starCardTitle');
+            const textEl = document.getElementById('starMessageText');
+            const card = document.getElementById('starMessageCard');
+            card.classList.add('scale-95');
+            setTimeout(() => {
+                titleEl.textContent = starData[index].title;
+                textEl.textContent = `«${starData[index].text}»`;
+                card.classList.remove('scale-95');
+            }, 120);
+
+            const persianCount = unlockedStars.size.toLocaleString('fa-IR');
+            document.getElementById('starCountText').textContent = `${persianCount} از ۴`;
+
+            const starNotes = [523.25, 587.33, 659.25, 783.99];
+            playMusicBoxNote(starNotes[index], 750, 0.1);
+
+            if (unlockedStars.size === 4) {
+                document.getElementById('cline-1').setAttribute('opacity', '0.95');
+                document.getElementById('cline-2').setAttribute('opacity', '0.95');
+                document.getElementById('cline-3').setAttribute('opacity', '0.95');
+                document.getElementById('cline-4').setAttribute('opacity', '0.75');
+                document.getElementById('cline-5').setAttribute('opacity', '0.75');
+                spawnEmojiShower(['🌌', '💫', '🌙', '✨', '🤍']);
+            }
+        }
+
+        /* ------------------------------------------
+           6. STAGE 3: CROSSING THE DISTANCE (SLIDER)
+        ------------------------------------------ */
+        let hugCompleted = false;
+
+        function handleHugSlide(val) {
+            attemptAutoPlayMusic();
+            const percent = Number(val);
+            const avatarMe = document.getElementById('avatarMe');
+            const avatarHer = document.getElementById('avatarHer');
+            const merged = document.getElementById('hugMergedEffect');
+            const kmCounter = document.getElementById('kmCounter');
+            const reveal = document.getElementById('hugRevealMessage');
+            const bridgeBox = document.getElementById('hugBridgeBox');
+
+            const offsetPercent = 6 + (percent / 100) * 38;
+            avatarMe.style.right = `${offsetPercent}%`;
+            avatarHer.style.left = `${offsetPercent}%`;
+
+            bridgeBox.style.backgroundColor = `rgba(${30 + Math.round(percent * 0.6)}, ${20 + Math.round(percent * 0.2)}, 75, 0.6)`;
+
+            if (percent < 96) {
+                const remaining = Math.round(100 - percent);
+                kmCounter.textContent = `${remaining.toLocaleString('fa-IR')} قدم تا آغوشت 🌙`;
+                avatarMe.style.opacity = '1';
+                avatarHer.style.opacity = '1';
+                merged.classList.add('opacity-0', 'scale-50');
+            } else {
+                kmCounter.textContent = '۰ کیلومتر (دقیقاً وسطِ قلبم 🤍✨)';
+                avatarMe.style.opacity = '0';
+                avatarHer.style.opacity = '0';
+                merged.classList.remove('opacity-0', 'scale-50');
+                reveal.classList.remove('hidden');
+
+                if (!hugCompleted) {
+                    hugCompleted = true;
+                    if (navigator.vibrate) {
+                        navigator.vibrate([80, 50, 120]);
+                    }
+                    playChimeEffect([523.25, 659.25, 783.99, 1046.5]);
+                    spawnEmojiShower(['🫂', '🤍', '🌷', '🌙', '✨']);
+                }
+            }
+        }
+
+        /* ------------------------------------------
+           7. STAGE 4: SEALED LOVE LETTER FOR FATEME
+        ------------------------------------------ */
+        const fullLetterContent = `بیب دوست‌داشتنی من،
+به امید روزی که تمام این فاصله‌ها تموم بشه و تولدت رو، درست کنار خودت، دست تو دست هم جشن بگیریم. تا اون روز، بدون که قلب من هر ثانیه پیشته و هیچ فاصله‌ای نمی‌تونه ذره‌ای از عشقم بهت کم کنه.
+حتی از پشت این صفحه و با وجود تمام کیلومترهایی که بینمونه، تو نزدیک‌ترین آدم به قلب منی. بودنت قشنگ‌ترین اتفاق زندگیمه و لبخندت تنها چیزیه که همیشه آرزوش رو دارم.
+تولدت هزار بار مبارک قشنگ‌ترینم 🤍✨`;
+
+        let isLetterOpened = false;
+
+        function openLoveLetter() {
+            attemptAutoPlayMusic();
+            if (isLetterOpened) return;
+            isLetterOpened = true;
+
+            const env = document.getElementById('envelopeContainer');
+            const seal = document.getElementById('waxSeal');
+            const preview = document.getElementById('innerLetterPreview');
+            const paper = document.getElementById('letterPaper');
+            const hint = document.getElementById('envelopeHint');
+
+            env.classList.add('envelope-open');
+            seal.classList.add('scale-0', 'opacity-0');
+            hint.textContent = 'نامه‌ی شبِ تولدت باز شد بیب 🌙✨';
+
+            playChimeEffect([440, 554.37, 659.25, 880]);
+
+            setTimeout(() => {
+                preview.classList.add('-translate-y-6');
+                paper.classList.remove('hidden');
+                paper.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                startPersianTypewriter();
+            }, 520);
+        }
+
+        function startPersianTypewriter() {
+            const target = document.getElementById('typewriterText');
+            target.textContent = '';
+            target.classList.add('typewriter-cursor');
+            let charIdx = 0;
+
+            function typeStep() {
+                if (charIdx < fullLetterContent.length) {
+                    target.textContent += fullLetterContent.charAt(charIdx);
+                    charIdx++;
+                    setTimeout(typeStep, 32);
+                } else {
+                    target.classList.remove('typewriter-cursor');
+                    document.getElementById('letterFooterAction').classList.remove('hidden');
+                    spawnEmojiShower(['💌', '🌙', '🤍', '🌷', '✨']);
+                }
+            }
+            typeStep();
+        }
+
+        function sendKissShower() {
+            attemptAutoPlayMusic();
+            spawnEmojiShower(['💋', '🌙', '🤍', '🌷', '✨', '🦢']);
+            triggerCelebrationConfetti();
+            playChimeEffect([523.25, 659.25, 783.99, 1046.5]);
+            showToast('هزار تا بوسه به سمت تو پرواز کرد عشقم! 💋🌙✨');
+        }
+
+        /* ------------------------------------------
+           INITIALIZE ON WINDOW LOAD
+        ------------------------------------------ */
+        window.onload = function () {
+            resizeCanvases();
+            animateCanvases();
+            window.addEventListener('resize', resizeCanvases);
+            // Attempt immediate autoplay on load (and fallback to first touch if browser requires gesture)
+            attemptAutoPlayMusic();
+        };
+    </script>
+</body>
+</html>
